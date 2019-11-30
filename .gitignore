@@ -1,0 +1,6 @@
+*.log
+output/
+source/
+to-website/
+not-public/
+
