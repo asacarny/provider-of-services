@@ -383,7 +383,7 @@ compress
 sort pn year
 
 save output/pos.dta, replace
-saveold output/pos.v11.dta, replace version(11)
+saveold output/pos.v12.dta, replace version(12)
 export delimited output/pos.csv, replace
 
 log close
@@ -406,7 +406,7 @@ label variable firstyear "year of POS data (and first year pn appeared in data)"
 
 sort pn
 save output/pos_firstyear.dta, replace
-saveold output/pos_firstyear.v11.dta, replace version(11)
+saveold output/pos_firstyear.v12.dta, replace version(12)
 export delimited output/pos_firstyear.csv, replace
 
 log close
@@ -431,7 +431,7 @@ label variable lastyear "year of POS data (and last year pn appeared in data)"
 
 sort pn
 save output/pos_lastyear.dta, replace
-saveold output/pos_lastyear.v11.dta, replace version(11)
+saveold output/pos_lastyear.v12.dta, replace version(12)
 export delimited output/pos_lastyear.csv, replace
 
 log close
