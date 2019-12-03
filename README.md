@@ -12,7 +12,7 @@ The code produces three datasets. The main dataset, `pos.dta`, has a record for 
 * Hospitals that merge, change subtype, or change type of control will usually get a new provider number. In this case, their old provider number will persist in the data but will get a termination code and date going forward. Keep this in mind when attempting to follow hospitals longitudinally. If you are lucky, the new hospital records will indicate the previous provider number (`prev_pn`). 
 * I have heard, but can’t confirm, that CMS rarely updates this data, so the hospital characteristics in it may be quite out of date.
 * The variables that count residents (`residents`) and beds (`beds_tot` and `beds_cert`) are very occasionally missing in 2011 and 2012. This issue seems to almost exclusively affect transplant hospitals.
-* The variables that indicate the provider subtype e.g. short-term/long-term/etc. (`provider_subtype`) and type of control e.g. non-profit/for-profit/government (`typ_control`) are very occasionally missing. This issue seems to be limited to federal hospitals like VA facilities as well as Canadian hospitals. Note that indicators I derived from these variables (`shortterm`, `cah`, `nonprofit`, `forprofit`, `govt`) will be set to *zero* in this case.
+* The variables that indicate the provider subtype e.g. short-term/long-term/etc. (`provider_subtype`) and type of control e.g. non-profit/for-profit/government (`typ_control`) are sometimes missing. This issue seems to be limited to certain transplant hospitals, federal hospitals like VA facilities, and Canadian hospitals. Note that indicators I derived from these variables (`shortterm`, `cah`, `nonprofit`, `forprofit`, `govt`) will be set to *zero* in this case.
 
 # Download the processed data
 
